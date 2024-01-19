@@ -64,7 +64,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
         <NavBarContainer scrollPosition={scrollPosition}>
             <NavigationBar>
                 <div data-aos="fade-down" className="logo">
-                    <StyledLink onClick={() => window.scrollTo(0,0)} to="/">Dongyun Kim</StyledLink>
+                    <StyledLink onClick={() => window.scrollTo(0,0)} to="/">PORTFOLIO</StyledLink>
                 </div>
                 <NavItemsContainer data-aos="fade-down">
                     <MenuButton onClick={toggleNav}>

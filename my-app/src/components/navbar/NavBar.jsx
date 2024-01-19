@@ -1,7 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
+import { 
+    NavBarContainer,
+    NavigationBar,
+    StyledLink,
+    NavItemsContainer,
+    MenuButton,
+    NavBarUl,
+    NavBarButton,
+    NavBarListItem,
+    NavBarLink,
+    HireMeButton,
+ } from "./NavBar.styled";
 
 const navItems = [
     {
@@ -50,43 +61,40 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
     }, []);
 
     return (
-        <div className={`w-full mx-auto fixed top-0 py-5 sm:py-4 z-30 ${scrollPosition > 0 ? `bg-white shadow-md` : `bg-transparent`}`}>
-            <nav className="container m-auto flex items-center justify-between">
+        <NavBarContainer scrollPosition={scrollPosition}>
+            <NavigationBar>
                 <div data-aos="fade-down" className="logo">
-                    <Link onClick={() => window.scrollTo(0,0)} to="/" className="text-3x1 font-bold sm:text-3x1">Dongyun Kim</Link>
+                    <StyledLink onClick={() => window.scrollTo(0,0)} to="/">Dongyun Kim</StyledLink>
                 </div>
-                <div data-aos="fade-down" className="nav-items flex items-center space-x-11">
-                    <button onClick={toggleNav} className="cursor-pointer text-2x1 hidden md:block">
+                <NavItemsContainer data-aos="fade-down">
+                    <MenuButton onClick={toggleNav}>
                         <HiMenu size={25} />
-                    </button>
-                    <ul className={`flex items-center space-x-11 ${!isOpen ? "md:flex" : "md:right-[0#]"} md:flex-col md: absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-white`}>
-                        <button onClick={toggleNav} className={`text-3x1 hidden md:block relative right-0 top-4 container mx-auto`}>
+                    </MenuButton>
+                    <NavBarUl isOpen={isOpen}>
+                        <NavBarButton onClick={toggleNav}>
                             <RxCross2 size={25} />
-                        </button>
+                        </NavBarButton>
                         {navItems.map((item) => (
-                            <li
+                            <NavBarListItem
                               key={item.id}
-                              className="md:m-6 md:flex md:gap-6 md:items-center md:justify-center"
                             >
-                                <a
+                                <NavBarLink
                                   onClick={() => toggleNav(item.name)}
                                   href={`#${item.name}`}
-                                  className={`uppercase cursor-pointer text-black hover:text-yellow-600 font-bold ${item.name === activeIndex ? "text-yellow-600" : ""}`}
                                 >
                                     {item.name}
-                                </a>
-                            </li>
+                                </NavBarLink>
+                            </NavBarListItem>
                         ))}
-                        <a
-                          href=" "
-                          className="bg-black text-[1rem] text-white px-8 py-2 rounded-lg font-bold hover:text-yellow-400 md:m-5 md:block md:mx-auto md:w-fit lg:px-3"
+                        <HireMeButton
+                          href=" "                          
                         >
                             HIRE ME
-                        </a>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+                        </HireMeButton>
+                    </NavBarUl>
+                </NavItemsContainer>
+            </NavigationBar>
+        </NavBarContainer>
     );
 };
 

@@ -25,7 +25,7 @@ export const NavigationBar = styled.nav`
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
-  font-size: 3x1;
+  font-size: 3xl;
   font-weight: bold;
 `;
 
@@ -38,7 +38,7 @@ export const NavItemsContainer = styled.div`
 
 export const MenuButton = styled.button`
   cursor: pointer;
-  font-size: 2x1;
+  font-size: 2xl;
   display: none;
 
   /* @media (min-width: 768px) {
@@ -66,7 +66,7 @@ export const NavBarUl = styled.ul`
 `;
 
 export const NavBarButton = styled.button`
-  font-size: 3x1;
+  font-size: 3xl;
   display: none;
   position: relative;
   right: 0;

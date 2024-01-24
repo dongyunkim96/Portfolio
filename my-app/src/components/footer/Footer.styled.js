@@ -22,7 +22,7 @@ export const FooterBox = styled.div`
 
 export const FooterHeading = styled.h2`
   font-weight: bold;
-  font-size: 5x1;
+  font-size: 5xl;
 `;
 
 export const FooterIcons = styled.div`
@@ -44,7 +44,7 @@ export const FooterLinks = styled.a`
 
 export const TelegramIcon = styled(FaTelegramPlane)`
   color: black;
-  font-size: 3x1;
+  font-size: 3xl;
   transition: transform 0.3s ease;
 
   &:hover {
@@ -55,7 +55,7 @@ export const TelegramIcon = styled(FaTelegramPlane)`
 
 export const WhatsAppIcon = styled(IoLogoWhatsapp)`
   color: black;
-  font-size: 3x1;
+  font-size: 3xl;
   transition: transform 0.3s ease;
 
   &:hover {
@@ -66,7 +66,7 @@ export const WhatsAppIcon = styled(IoLogoWhatsapp)`
 
 export const InstagramIcon = styled(RiInstagramFill)`
   color: black;
-  font-size: 3x1;
+  font-size: 3xl;
   transition: transform 0.3s ease;
 
   &:hover {

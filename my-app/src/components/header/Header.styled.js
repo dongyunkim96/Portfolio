@@ -46,7 +46,7 @@ export const Information = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 5x1;
+  font-size: 5xl;
   font-weight: bold;
   @media (max-width: 767px) {
     font-size: 2rem;
@@ -55,11 +55,11 @@ export const Title = styled.h2`
 
 export const AnimatedText = styled(TypeAnimation)`
   color: #ffed5a;
-  font-size: 4x1;
+  font-size: 4xl;
   font-weight: bold;
 
   @media (max-width: 767px) {
-    font-size: 3x1;
+    font-size: 3xl;
   }
 `;
 

@@ -25,7 +25,7 @@ const navItems = [
     },
     {
         id: 2,
-        name: "Works",
+        name: "Work",
     },
     {
         id: 3,
@@ -43,7 +43,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
 
     // Toggle the NavBar
     const toggleNav = (name) => {
-        setIsOpen(!isOpen);
+        setIsOpen(false);
         setActiveIndex(name === activeIndex ? null : name);
     };
     

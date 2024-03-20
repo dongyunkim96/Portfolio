@@ -23,7 +23,7 @@ import {
 
 const Resume = () => {
     return (
-        <ResumeContainer id="resume">
+        <ResumeContainer id="Resume">
             <ResumeBox>
                 <ResumeTitle>Resume</ResumeTitle>
                 <ResumeSubTitle1></ResumeSubTitle1>

@@ -15,10 +15,7 @@ import {
     IconsContainer,
     RightContainer,
     ImageContainer,
-    MainImage,
-    ImageOverlay,
-    ThumbnailContainer,
-    PlayIcon,
+    MainImage
 } from "./Header.styled.js";
 import {
     AiFillTwitterCircle,
@@ -27,8 +24,6 @@ import {
 } from "react-icons/ai";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
-import { FaPlay } from "react-icons/fa";
-import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
     return (
@@ -72,27 +67,27 @@ const Header = () => {
                           data-aos-duration="1500"
                         >
                             <IconListItem>
-                                <a href=' '>
+                                <a href='https://github.com/dongyunkim96'>
                                     <AiFillGithub />
                                 </a>
                             </IconListItem>
                             <IconListItem>
-                                <a href=' '>
+                                <a href='https://www.linkedin.com/in/dongyun-kim-363487272/'>
                                     <FaLinkedin />
                                 </a>
                             </IconListItem>
                             <IconListItem>
-                                <a href=' '>
+                                <a href='https://www.instagram.com/eastbright_dong/'>
                                     <AiFillInstagram />
                                 </a>
                             </IconListItem>
                             <IconListItem>
-                                <a href=' '>
+                                <a href='https://www.facebook.com/profile.php?id=100005306110174'>
                                     <FaFacebook />
                                 </a>
                             </IconListItem>
                             <IconListItem>
-                                <a href=' '>
+                                <a href='https://twitter.com/dongyunKim96'>
                                     <AiFillTwitterCircle />
                                 </a>
                             </IconListItem>
@@ -106,15 +101,6 @@ const Header = () => {
                           src={" "}
                           alt='my photo'
                         />
-                        <ImageOverlay>
-                            <ThumbnailContainer data-aos="zoom-in" data-aos-duration="1000">
-                                <img
-                                  src='Front-end developer image here'
-                                  alt=' '
-                                />
-                                <PlayIcon />
-                            </ThumbnailContainer>
-                        </ImageOverlay>
                     </ImageContainer>
                 </RightContainer>
             </Content>

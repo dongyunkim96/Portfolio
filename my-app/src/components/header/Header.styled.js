@@ -1,6 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
 import { styled } from "styled-components";
-import { FaPlay } from "react-icons/fa"
 
 export const Container = styled.div`
 background: linear-gradient(to right, #a0f28c, #87ceeb);
@@ -143,8 +142,9 @@ export const IconListItem = styled.li`
     display: block;
     text-decoration: none;
     color: inherit;
-    height: 1.8rem;
-    width: 1.8rem;
+    left: 100px;
+    height: 3rem;
+    width: 3rem;
     font-size: 1.6rem;
 
     &:hover {
@@ -186,31 +186,4 @@ export const MainImage = styled.img`
     height: 95%;
     margin: auto;
   }
-`;
-
-export const ImageOverlay = styled.div`
-  position: absolute;
-  bottom: 10%;
-  right: 8%;
-`;
-
-export const ThumbnailContainer = styled.div`
-  position: relative;
-  cursor: pointer;
-
-  img {
-    width: 135px;
-
-    @media (min-width: 768px) {
-        width: 90px;
-    }
-  }
-`;
-
-export const PlayIcon = styled(FaPlay)`
-  color: #000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 `;

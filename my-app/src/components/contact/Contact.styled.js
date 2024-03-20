@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContactContainer = styled.div`
   margin: auto;
   margin-top: 16rem;
+  height: 400px;
 `;
 
 export const ContactHeader = styled.div`
@@ -98,9 +99,11 @@ export const ContactCardRightForm = styled.form`
 
 export const ContactCardInput = styled.input`
   padding: 2px 3px;
+  margin-bottom: 15px;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   width: 100%;
+  height: 35px;
 `;
 
 export const ContactCardTextarea = styled.textarea`
@@ -109,6 +112,7 @@ export const ContactCardTextarea = styled.textarea`
   border-radius: 8px;
   padding: 8px;
   width: 100%;
+  height: 100px;
 `;
 
 export const ContactCardInputButton = styled.button`
@@ -122,4 +126,5 @@ export const ContactCardInputButton = styled.button`
   align-items: center;
   justify-content: center;
   gap: 4px;
+  margin-top: 40px;
 `;

@@ -12,7 +12,7 @@ import {
 
 const Work = () => {
     return (
-        <WorkContainer>
+        <WorkContainer id="Work">
             <WorkSection data-aos="fade-up">
                 <h3>Works</h3>
                 <span></span>

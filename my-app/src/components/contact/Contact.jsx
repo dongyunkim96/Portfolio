@@ -18,7 +18,7 @@ import { RiSendPlaneFill } from "react-icons/ri";
 
 const Contact = () => {
     return (
-        <ContactContainer>
+        <ContactContainer id="Contact">
             <ContactHeader data-aos="fade-up">
                 <h3>Contact</h3>
                 <span></span>
@@ -50,7 +50,7 @@ const Contact = () => {
                           name="name"
                         />
                         <ContactCardTextarea
-                          row="4"
+                          row="10"
                           cols="50"
                           placeholder="Write your message"
                           name="message"
